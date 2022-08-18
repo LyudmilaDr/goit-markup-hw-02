@@ -190,13 +190,11 @@ text-decoration: none;
 .work-title {
 font-weight: 700;
 font-size: 18px;
-text-align: center;
 }
 .work-meta {
   font-weight:400;
 font-size:16px;
 color: var(--text-color);
-text-align: center;
 }
 /**
   |============================
