@@ -1,64 +1,83 @@
 :root {
-  --primmaty-text-color: #000000;
-  --title-text-color: #FFFFFF;
+
+  /* Fonts*/
+ --main-font: 'roboto', sans-serif;
+ --secondary-font: 'raleway', sans-serif;
+ --accent-font: 'oleo script', cursive;
+
+    /* Text color*/
+  --primmaty-text-color: #212121;
+  --title-text-color: #ffffff;
+  --text-color: #757575;
   --accent-color: #2196F3;
+
+  /* Backgroundcolor*/
+  --primmaty-bg-cl: #F5F5F5;
+  --accent-bg-cl: #2F303A;
 }
 
-body {
-  font-family: 'oleo script', cursive;
-  font-family: 'raleway', sans-serif;
-  font-family: 'roboto', sans-serif;
-  background-color: #F5F5F5;
-  color: var(--primmaty-text-color);
+.page {
+  font-family:var(--main-font);
+  font-size:16px;
+  color:var(--primmaty-text-color);
+  background-color:var(--primmaty-bg-cl);
 }
 
+/* reset */
 .list {
   text-decoration: none;
   color: currentColor;
   list-style: none;
 }
-
+/**
+  |============================
+  | Header
+  |============================
+*/
 
 .header {
   margin: 0;
   padding: 0;
-  font-family: roboto;
-  font-style: medium;
-  font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  background-color: #ffffff;
+  background-color:var(--title-text-color);
 
-}
-
+} 
 .special {
   color: var(--accent-color);
 }
 
 .logo {
-  color: var(--primmaty-text-color);
+  font-family:var(--secondary-font);
+  text-decoration: none;
+ color:var(--primmaty-text-color);
 }
 
 .special,
 .logo {
-  font-family: raleway;
-  font-style: bold;
-  font-weight: 400px;
+  font-family:var(--secondary-font);
+  font-weight: 700;
   font-size: 26px;
   line-height: 31px;
 }
-
-nav a {
+.item {
+  color:var(--accent-color);
+  text-decoration: none;
+}
+.header-item {
   color: var(--primmaty-text-color);
+  text-decoration: none;
 }
 
 .header-item:focus,
 .header-item:hover {
-  color: var(--accent-color);
+  color:var(--title-text-color);
+
 }
 
 .header-all {
-  color: var(--accent-color);
+  color:var(--accent-color);
+  text-decoration: none;
 }
 
 .header-all:hover,
@@ -67,36 +86,43 @@ nav a {
 }
 
 .header-phone {
-  color: var(--primmaty-text-color)
+  color: var(--primmaty-text-color);
+  text-decoration: none;
+ 
 }
-
+/**
+  |============================
+  | Slogan
+  |============================
+*/
 .slogan {
-  background: rgba(47, 48, 58, 1);
-  ;
+  background:var(--accent-bg-cl);
+  text-align: center;
 }
 
 .cnt {
-  font-family: roboto;
-  font-weight: 900;
   font-size: 44px;
   line-height: 60px;
   color: var(--title-text-color);
 }
 
 .button {
-  cursor: pointer;
-  font-family: roboto;
-  font-style: bold;
-  font-size: 16px;
-  line-height: 30px;
   color: var(--title-text-color);
   background-color: #2196F3;
-
+  cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-  background-color: #2F303A;
+  background-color:var(--accent-bg-cl);
+}
+/**
+  |============================
+  | About
+  |============================
+*/
+.about {
+  background-color: var(--primmaty-bg-cl);
 }
 
 .visually-hidder {
@@ -111,30 +137,99 @@ nav a {
   clip-path: inset(50%);
   margin: -1px;
 }
+.about-subtitle {
+  color: var(--primmaty-text-color);
+}
+.about-text {
+  color: var(--text-color);
+}
+/**
+  |============================
+  |Image
+  |============================
+*/
+.image {
+  background-color: var(--primmaty-bg-cl);
+}
+.image-headline {
+   font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+/**
+  |============================
+  | Nero
+  |============================
+*/
+.nero {
+  background: #F5F4FA;
+}
+.nero-caption {
+  text-align:center;
+}
 
+.nero-meta {
+ color:var(--text-color); 
+ font-weight:500; 
+}
+.nero-item {
+  color:var(--primmatytext-color);
+  font-weight:400;
+ }
+
+/**
+  |============================
+  | Portfolio
+  |============================
+*/
+.btn {
+color:var(--primmaty-text-color) ;
+background-color:#F5F4FA ;
+text-decoration: none;
+}
+.work-title {
+font-weight: 700;
+font-size: 18px;
+text-align: center;
+}
+.work-meta {
+  font-weight:400;
+font-size:16px;
+color: var(--text-color);
+text-align: center;
+}
+/**
+  |============================
+  | Footer
+  |============================
+*/
 .footer {
-  font-family: roboto;
-  font-style: regular;
+
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  background-color: #2F303A;
+  background-color:var(--accent-bg-cl);
 }
 
 .footer-logo {
-  font-family: raleway;
-  font-style: bold;
-  font-weight: 400px;
+  font-family:var(--secondary-font);
+  font-weight:700;
   font-size: 26px;
   line-height: 31px;
-  color: var(--title-text-color);
+  text-decoration: none;
+  color:var(--title-text-color);
 }
 
 .footer-type {
   color: var(--title-text-color);
+  text-decoration: none;
+  font-style: normal;
 }
 
 .footer-phone,
 .footer-all {
-  color: rgba(255, 255, 255, 0.6);
-}
+  font-style: normal;
+  font-family:var(--main-font);
+  color:var(--text-color);
+  text-decoration: none;
+ }
