@@ -1,114 +1,140 @@
+:root {
+  --primmaty-text-color: #000000;
+  --title-text-color: #FFFFFF;
+  --accent-color: #2196F3;
+}
 
 body {
-font-family: 'oleo Script', cursive;
-font-family: 'raleway', sans-serif;
-font-family: 'roboto', sans-serif;
-background-color:#F5F5F5 ;
-color: rgba(33, 33, 33, 1);
+  font-family: 'oleo script', cursive;
+  font-family: 'raleway', sans-serif;
+  font-family: 'roboto', sans-serif;
+  background-color: #F5F5F5;
+  color: var(--primmaty-text-color);
 }
+
+.list {
+  text-decoration: none;
+  color: currentColor;
+  list-style: none;
+}
+
+
 .header {
-  margin:0;
-  padding:0;
-  font-family:roboto;
-  font-style:medium;
-  font-size:14px;
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+  font-style: medium;
+  font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  background-color:#ffffff;
+  background-color: #ffffff;
 
 }
+
 .special {
-color:#2196F3 ; 
-   } 
+  color: var(--accent-color);
+}
+
 .logo {
- color:#000000;
-  }
+  color: var(--primmaty-text-color);
+}
 
 .special,
 .logo {
-  font-family:raleway;
-  font-style:bold;
-  font-weight:400px;
-  font-size:26px;
- line-height:31px;
+  font-family: raleway;
+  font-style: bold;
+  font-weight: 400px;
+  font-size: 26px;
+  line-height: 31px;
 }
+
 nav a {
-color:rgba(33, 33, 33, 1);
+  color: var(--primmaty-text-color);
 }
+
 .header-item:focus,
 .header-item:hover {
-  color:#2196F3;
+  color: var(--accent-color);
 }
+
 .header-all {
-color:#2196F3;
+  color: var(--accent-color);
 }
+
 .header-all:hover,
 .header-all:focus {
-  color:#000000;
+  color: var(--primmaty-text-color);
 }
+
 .header-phone {
- color:#757575 
+  color: var(--primmaty-text-color)
 }
 
-
-.slogan{
-background:rgba(47, 48, 58, 1); ;
+.slogan {
+  background: rgba(47, 48, 58, 1);
+  ;
 }
+
 .cnt {
-font-family:roboto;
-font-weight:900;
-font-style: black;
-font-size:44px;
- line-height:60px;
-color: #FFFFFF;
+  font-family: roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  color: var(--title-text-color);
 }
+
 .button {
   cursor: pointer;
-font-family:roboto;
- font-style:bold;
-font-size:16px;
-line-height:30px;
-color:#FFFFFF;
-background-color: #2196F3;
+  font-family: roboto;
+  font-style: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--title-text-color);
+  background-color: #2196F3;
 
 }
+
 .button:hover,
 .button:focus {
-background-color:#2F303A ;
+  background-color: #2F303A;
 }
- .visually-hidder {
+
+.visually-hidder {
   position: absolute;
-  white-space:nowrap;
+  white-space: nowrap;
   width: 1px;
   height: 1px;
   overflow: hidden;
-  border:0;
+  border: 0;
   padding: 0;
   clip: rect(0000);
   clip-path: inset(50%);
   margin: -1px;
-  }
+}
 
 .footer {
-font-family:roboto;
-font-style:regular;
- font-size:14px;
-line-height:24px;
-font-weight:400;
-background-color: #2F303A;
+  font-family: roboto;
+  font-style: regular;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: #2F303A;
 }
+
 .footer-logo {
   font-family: raleway;
-    font-style: bold;
-    font-weight: 400px;
-    font-size: 26px;
-    line-height: 31px;
-    color:#ffffff;
+  font-style: bold;
+  font-weight: 400px;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--title-text-color);
 }
+
 .footer-type {
-color:#FFFFFF;
+  color: var(--title-text-color);
 }
+
 .footer-phone,
 .footer-all {
- color:rgba(255, 255,255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
