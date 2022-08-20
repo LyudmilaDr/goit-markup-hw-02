@@ -1,9 +1,8 @@
 :root {
 
   /* Fonts*/
- --main-font: 'roboto', sans-serif;
- --secondary-font: 'raleway', sans-serif;
- --accent-font: 'oleo script', cursive;
+ --main-font: 'Roboto', sans-serif;
+ --secondary-font: 'Raleway', sans-serif;
 
     /* Text color*/
   --primmaty-text-color: #212121;
@@ -20,7 +19,6 @@
   font-family:var(--main-font);
   font-size:16px;
   color:var(--primmaty-text-color);
-  background-color:var(--primmaty-bg-cl);
 }
 
 /* reset */
@@ -65,31 +63,27 @@
   text-decoration: none;
 }
 .header-item {
-  color: var(--primmaty-text-color);
+  font-size:14px;
+  color: var(--text-color);
   text-decoration: none;
 }
 
 .header-item:focus,
 .header-item:hover {
-  color:var(--title-text-color);
+  color:var(--accent-color);
 
 }
 
 .header-all {
-  color:var(--accent-color);
+  color:var(--text-color);
   text-decoration: none;
 }
 
 .header-all:hover,
 .header-all:focus {
-  color: var(--primmaty-text-color);
+  color:var(--accent-color );
 }
 
-.header-phone {
-  color: var(--primmaty-text-color);
-  text-decoration: none;
- 
-}
 /**
   |============================
   | Slogan
@@ -98,6 +92,7 @@
 .slogan {
   background:var(--accent-bg-cl);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .cnt {
@@ -110,20 +105,19 @@
   color: var(--title-text-color);
   background-color: #2196F3;
   cursor: pointer;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 .button:hover,
 .button:focus {
-  background-color:var(--accent-bg-cl);
+  background-color:#188CE8;
 }
 /**
   |============================
   | About
   |============================
 */
-.about {
-  background-color: var(--primmaty-bg-cl);
-}
 
 .visually-hidder {
   position: absolute;
@@ -138,19 +132,23 @@
   margin: -1px;
 }
 .about-subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
   color: var(--primmaty-text-color);
 }
 .about-text {
+  font-size: 14px;
+  line-height: 24px;
   color: var(--text-color);
+
 }
 /**
   |============================
   |Image
   |============================
 */
-.image {
-  background-color: var(--primmaty-bg-cl);
-}
+
 .image-headline {
    font-size: 36px;
   line-height: 42px;
@@ -165,12 +163,20 @@
   background: #F5F4FA;
 }
 .nero-caption {
+  font-weight:700;
+  font-size: 36px;
+  line-height:42px;
   text-align:center;
+}
+.nero-title {
+font-weight:500;
+font-size:16px;
+line-height:19px;
 }
 
 .nero-meta {
  color:var(--text-color); 
- font-weight:500; 
+ font-weight:400; 
 }
 .nero-item {
   color:var(--primmatytext-color);
@@ -183,11 +189,25 @@
   |============================
 */
 .btn {
+  font-weight:500;
+  font-size:16px;
+  line-height: 26px;
 color:var(--primmaty-text-color) ;
 background-color:#F5F4FA ;
 text-decoration: none;
+cursor: pointer;
+border-radius: 4px;
+}
+.btn:focus,
+.btn:hover {
+  background-color: var(--accent-color);
+  color:var(--title-text-color);
+}
+.main-btn {
+text-decoration: none;
 }
 .work-title {
+color: var(--primmaty-text-color);
 font-weight: 700;
 font-size: 18px;
 }
@@ -196,6 +216,9 @@ font-size: 18px;
 font-size:16px;
 color: var(--text-color);
 }
+ .main_item {
+  text-decoration: none;
+ }
 /**
   |============================
   | Footer
@@ -224,10 +247,18 @@ color: var(--text-color);
   font-style: normal;
 }
 
-.footer-phone,
+
 .footer-all {
   font-style: normal;
   font-family:var(--main-font);
   color:var(--text-color);
   text-decoration: none;
  }
+ .footer-type:hover,
+ .footer-type:focus {
+  color: #188CE8;
+}
+.footer-all:hover,
+.footer-all:focus {
+ color: #188CE8;
+}
